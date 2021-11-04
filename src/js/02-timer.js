@@ -40,6 +40,7 @@ refs.startBtn.addEventListener('click', onStartBtnClick);
 
 function onStartBtnClick() {
   refs.startBtn.disabled = true;
+  refs.checkDate.disabled = true;
   getTimerTime();
   refs.intervalID = setInterval(getTimerTime, 1000);
 }
