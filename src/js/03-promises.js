@@ -41,21 +41,3 @@ function createPromise(position, delay) {
     }
   });
 }
-
-// function createPromise(position, delay) {
-//   const shouldResolve = Math.random() > 0.3;
-
-//   return new Promise((resolve, reject) => {
-//     if (shouldResolve) {
-//       setTimeout(() => {
-//         resolve(
-//           Notify.success(`✅ Fulfilled promise ${position} in ${delay}ms`, { useIcon: false }),
-//         );
-//       }, delay);
-//     } else {
-//       setTimeout(() => {
-//         reject(Notify.failure(`❌ Rejected promise ${position} in ${delay}ms`, { useIcon: false }));
-//       }, delay);
-//     }
-//   });
-// }
